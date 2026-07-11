@@ -183,6 +183,7 @@ If any line shows `False`, recheck your Drive folder structure against Step 2.
 ## Expected Outputs
 
 After a complete run, the following results should be confirmed:
+---
 **Arm 1: Real Data**
 ```
 DEPRESJON  mean ρ = 0.736  SD = 0.311  median = 0.885  n = 54
