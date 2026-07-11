@@ -21,7 +21,7 @@ The pipeline is validated in **two independent arms**:
 | **Arm 1** | DEPRESJON (n=54, actigraphy) + PMData (n=15, Fitbit multi-domain) | Real-world validation on public datasets |
 | **Arm 2** | Controlled generative simulation with known ground truth | Five pre-registered experiments with fixed success criteria |
 
-**Primary results:** within-participant Spearman ρ = 0.736 (DEPRESJON) and ρ = 0.849 (PMData) under leakage-free blocked forward-chaining cross-validation; leakage gap = 0.589 (Wilcoxon p < 0.0001); SHAP–permutation importance agreement ρ = 0.969; all five simulation experiments PASS.
+**Primary results:** within-participant Spearman ρ = 0.736 (DEPRESJON) and ρ = 0.849 (PMData) under leakage-free blocked forward-chaining cross-validation; leakage gap = 0.589 (Wilcoxon p < 0.0001); SHAP–permutation importance agreement ρ = 0.969 for DEPRESJON and ρ = 0.948 for PMData; all five simulation experiments PASS.
 
 ---
 
