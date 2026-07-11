@@ -1,0 +1,10 @@
+end_date_time,activity_names,perceived_exertion,duration_min
+2019-11-07T15:00:23.000Z,"['individual', 'running']",3,30
+2019-12-12T06:30:37.000Z,"['individual', 'running']",5,50
+2019-12-23T08:29:24.674Z,"['individual', 'running']",9,30
+2020-01-02T09:30:38.000Z,"['individual', 'endurance']",4,50
+2020-01-02T19:43:08.773Z,"['individual', 'endurance']",6,30
+2020-01-05T19:42:46.358Z,"['individual', 'running']",4,30
+2020-01-15T20:00:39.487Z,"['individual', 'endurance']",5,30
+2020-01-26T10:42:37.000Z,"['individual', 'strength']",5,50
+2020-02-13T06:00:29.000Z,"['individual', 'strength', 'endurance']",5,30

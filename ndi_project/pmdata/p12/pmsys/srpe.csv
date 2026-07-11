@@ -1,0 +1,41 @@
+end_date_time,activity_names,perceived_exertion,duration_min
+2019-11-17T10:10:54.074Z,"['individual', 'strength']",7,120
+2019-11-18T05:46:27.796Z,"['individual', 'running']",7,50
+2019-11-19T10:45:52.000Z,"['individual', 'strength']",5,50
+2019-11-22T05:34:45.876Z,"['individual', 'strength']",7,30
+2019-11-24T09:45:24.000Z,"['individual', 'strength']",8,90
+2019-11-25T05:46:00.657Z,"['individual', 'running']",7,40
+2019-11-27T05:50:40.000Z,"['individual', 'strength', 'running']",7,40
+2019-11-29T05:44:56.150Z,"['individual', 'running']",8,40
+2019-12-02T06:31:02.540Z,"['individual', 'running']",7,50
+2019-12-06T09:33:20.000Z,"['individual', 'running']",8,30
+2019-12-08T09:10:10.000Z,"['individual', 'strength', 'endurance']",7,50
+2019-12-11T08:40:23.000Z,"['individual', 'strength', 'running']",8,50
+2019-12-15T08:45:22.000Z,"['individual', 'strength', 'endurance']",7,110
+2019-12-17T05:51:35.653Z,"['individual', 'strength', 'running']",6,50
+2020-01-05T08:30:59.000Z,"['individual', 'strength', 'endurance']",7,70
+2020-01-06T06:00:06.000Z,"['individual', 'strength', 'running']",6,50
+2020-01-10T05:50:30.000Z,"['individual', 'strength', 'running']",7,50
+2020-01-12T10:00:00.000Z,"['individual', 'strength', 'endurance']",7,110
+2020-01-13T05:56:18.442Z,"['individual', 'strength', 'running']",8,60
+2020-01-27T06:10:33.000Z,"['individual', 'strength']",6,40
+2020-01-29T06:10:03.000Z,"['individual', 'strength']",7,50
+2020-02-01T15:30:46.000Z,"['individual', 'endurance']",6,40
+2020-02-02T13:30:48.000Z,"['individual', 'endurance']",5,120
+2020-02-05T06:10:35.000Z,"['individual', 'strength', 'endurance']",8,60
+2020-02-05T17:30:35.000Z,"['individual', 'strength']",7,90
+2020-02-07T06:10:42.000Z,"['individual', 'strength', 'endurance']",8,60
+2020-02-09T09:30:27.000Z,"['individual', 'strength', 'endurance']",7,90
+2020-02-10T06:10:07.000Z,"['individual', 'strength', 'endurance']",9,60
+2020-02-12T06:10:59.000Z,"['individual', 'strength', 'endurance']",8,60
+2020-02-14T10:41:50.783Z,"['individual', 'strength', 'running']",8,50
+2020-02-16T08:00:26.000Z,"['individual', 'strength', 'endurance', 'running']",8,60
+2020-02-17T06:10:01.000Z,"['individual', 'strength', 'endurance', 'running']",9,60
+2020-02-19T06:10:26.000Z,"['individual', 'strength']",6,60
+2020-02-21T09:30:44.000Z,"['individual', 'strength']",7,60
+2020-02-25T05:00:19.000Z,"['individual', 'strength', 'endurance']",8,60
+2020-03-02T06:10:40.000Z,"['individual', 'strength']",6,60
+2020-03-05T05:00:43.000Z,"['individual', 'strength']",7,60
+2020-03-09T06:00:13.809Z,"['individual', 'strength', 'endurance']",7,50
+2020-03-25T06:15:31.000Z,"['individual', 'strength']",7,20
+2020-03-27T05:50:21.000Z,"['individual', 'strength']",7,20

@@ -1,0 +1,4 @@
+[DEPRESJON] A pre-registered sensitivity sweep across 22 configurations showed ρ ranged from -0.028 to 0.750 (mean=0.556, range=0.777 ≥ 0.05); sensitivity to the indeterminacy weight choice is reported as a structural finding.
+
+[PMData] A pre-registered sensitivity sweep across 22 configurations showed ρ ranged from 0.679 to 0.896 (mean=0.831, range=0.217 ≥ 0.05); sensitivity to the indeterminacy weight choice is reported as a structural finding.
+

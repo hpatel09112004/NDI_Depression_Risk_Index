@@ -1,0 +1,6 @@
+Experiment,Criterion,Result,Verdict
+1 — Weight Recovery,|Δλ| ≤ 0.1 in ≥80% runs at n_days≥60,p(pass)=100.0%,✓ PASS
+2 — Leakage Demonstration,|naive_rho − blocked_rho| ≥ 0.10 in ≥70% runs,mean_gap=0.5891  p(gap≥0.10)=100.0%  true_in_CI=22.0%,✓ PASS
+3 — Baseline Discrimination,"CI excl 0 in signal ≥70%, in null ≤20%",signal=100.0%  null=4.0%,✓ PASS
+4 — SHAP Fidelity,mean rank ρ ≥ 0.70 (primary),mean_rho=0.8167  p(ρ≥0.5)=96.7%,✓ PASS
+5 — Power / Sample-Size Curve,Identify minimum design with ≥80% power,n_part=5  n_days=30  power=100.0%,✓ PASS

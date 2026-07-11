@@ -1,0 +1,6 @@
+model,target,rho,rmse,lift,lift_ci_lo,lift_ci_hi
+NDI_RF,madrs_mean (n_valid=405),-0.1672,4.9428,,,
+B1_AR(p=1),madrs_mean (n_valid=405),0.9449,1.5168,-1.1121,-1.2101,-1.0112
+B1_AR(p=2),madrs_mean (n_valid=405),0.9443,1.5195,-1.1115,-1.2065,-1.0057
+B2_Raw_RF,madrs_mean (n_valid=405),0.0966,4.6024,-0.2638,-0.4047,-0.1272
+B3_PersonalisedZ,madrs_mean (n_valid=405),-0.0517,5.1713,-0.1156,-0.259,0.0186
