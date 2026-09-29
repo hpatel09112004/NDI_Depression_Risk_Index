@@ -1,6 +1,0 @@
-model,target,rho,rmse,lift,lift_ci_lo,lift_ci_hi
-NDI_RF,NDI_smooth next-day (proxy),0.53,0.0677,,,
-B1_AR(p=1),NDI_smooth next-day (proxy),0.9186,0.043,-0.3886,-0.4244,-0.3523
-B1_AR(p=2),NDI_smooth next-day (proxy),0.9195,0.0433,-0.3895,-0.4242,-0.353
-B2_Raw_RF,NDI_smooth next-day (proxy),0.2416,0.0874,0.2884,0.2309,0.3427
-B3_PersonalisedZ,NDI_smooth next-day (proxy),0.1264,0.0897,0.4036,0.3487,0.455
