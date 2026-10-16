@@ -1,0 +1,30 @@
+{
+  "version": "v1.4",
+  "run_started": "2026-10-10T17:55:41+00:00",
+  "working_directory": "/content/NDI_Depression_Risk_Index",
+  "head_commit": "4dabbfe75a68bba0c849b6e1915652f34442acd6",
+  "tag": "v1.4",
+  "tag_commit": "4dabbfe75a68bba0c849b6e1915652f34442acd6",
+  "tag_commit_time": "2026-10-10T22:35:14+05:30",
+  "config_matches_tagged_config": true,
+  "tag_time_precedes_run_start": true,
+  "pmdata_participants_loaded": [
+    "p01",
+    "p02",
+    "p03",
+    "p04",
+    "p05",
+    "p06",
+    "p07",
+    "p08",
+    "p09",
+    "p10",
+    "p11",
+    "p12",
+    "p13",
+    "p14",
+    "p15",
+    "p16"
+  ],
+  "f_scale": 1.0
+}
