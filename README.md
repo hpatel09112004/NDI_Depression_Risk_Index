@@ -5,7 +5,7 @@
 [![Platform: Google Colab](https://img.shields.io/badge/platform-Google%20Colab-orange.svg)](https://colab.research.google.com/)
 
 > **Manuscript:** *Apparent Performance of a Neutrosophic Daily Depression Index Reflects Target Affinity: Leakage-Free Methodological Evaluation Study.*
-> Harsh Patel, Ilanthenral Kandasamy (School of Computer Science and Engineering, Vellore Institute of Technology). Submitted to *JMIR AI*, 2026.
+> Harsh Patel, Dr. Ilanthenral Kandasamy. Submitted to *JMIR AI*, 2026.
 >
 > **This repository holds** the analysis code, the frozen configuration files, and the archived output of every run behind the manuscript. Every number in the manuscript can be found in a file here, without running anything (see [Section 3](#3-where-every-manuscript-number-comes-from)).
 
