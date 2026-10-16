@@ -131,6 +131,7 @@ NDI_Depression_Risk_Index/
 │
 ├── README.md                          ← this file
 ├── LICENSE                            ← MIT
+├── TRIPOD_AI_checklist.docx           ← completed TRIPOD+AI reporting checklist (Multimedia Appendix 5)
 ├── ndi_pipeline.py                    ← shared pipeline module (neutrosophic decomposition, folds, helpers)
 │
 ├── ── Notebooks, in the order they were run ──
@@ -376,6 +377,7 @@ These are the original v1 outputs (with `manifest.json`), copied before any corr
 - **Independent re-implementation.** A separate implementation of the fold loop reproduces the clean endpoint to machine precision (`independent_check_*`).
 - **Archives are never modified.** Each hand-in check confirms that no file in an earlier results folder changed during the run.
 - **No credentials or raw data** are stored in this repository.
+- **Reporting checklist.** Reporting follows TRIPOD+AI (Collins et al., *BMJ* 2024;385:e078378). The completed checklist, with the manuscript page and section for every item, is in `TRIPOD_AI_checklist.docx` (Multimedia Appendix 5).
 
 ---
 
