@@ -1,0 +1,17 @@
+Participant p01: n = 152 rows, T0 = 10, g = 6, k = 7
+First test fold: training rows 0..9 (0-based), test row 16
+Row s holds the features of recorded day s (T, I on day s; F from days <= s).
+[forward]  <- primary in v1.3
+  test target y[16] averages the index over rows 17..23
+  last training row 9: its target averages rows 10..16
+  training rows inside the test-target window: none
+  last training target window touches the test row: True
+  purge drops 1 training row(s); last training row kept = 8  -> effective gap = 7 rows
+[trailing_v1]  <- v1.2 record
+  test target y[16] averages the index over rows 9..15
+  last training row 9: its target averages rows 2..8
+  training rows inside the test-target window: [9]
+  last training target window touches the test row: False
+  purge drops 1 training row(s); last training row kept = 8  -> effective gap = 7 rows
+Forward target needs all 7 following rows: the last scored test row of a series with n rows is n-8 (for p01: row 144); the final 7 rows have no target and are not scored.
+Alignment used for every v1.3 number in this run: forward

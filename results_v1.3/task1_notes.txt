@@ -1,0 +1,2 @@
+FLOOR NOTE: on the raw-feature target, arm mean rho ranges -0.011-0.095 -- every arm is below 0.10; the bound is on a target no arm predicts.
+ARTIFACT NOTE: the 'artifact excluded' column is interpretable only for comparisons whose self-derived advantage is significant (q < 0.05). Significant on the corrected path: V3 vs raw-RF, V3 vs pers-Z, V-signed vs raw-RF, V-signed vs pers-Z
