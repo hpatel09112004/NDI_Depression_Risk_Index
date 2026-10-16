@@ -1,0 +1,17 @@
+pid,sleep_scores,id_column_in_sleep_score,logId_in_sleep_json,sleep_json_logs,duplicate_logIds,matched,no_matching_log,cell5_date_differs_from_dateOfSleep,of_which_local_date_equals_dateOfSleep,local_date_differs_from_cell5_date,cell5_dates_with_2plus_scores
+p01,150,True,True,155,5,149,1,0,0,0,0
+p02,138,True,True,158,5,138,0,0,0,0,0
+p03,74,True,True,84,3,74,0,0,0,1,1
+p04,140,True,True,188,6,140,0,0,0,0,1
+p05,117,True,True,133,5,116,1,0,0,0,0
+p06,147,True,True,165,5,147,0,0,0,0,1
+p07,140,True,True,161,4,140,0,0,0,0,0
+p08,132,True,True,143,4,132,0,0,0,0,0
+p09,132,True,True,142,5,132,0,0,0,0,1
+p10,98,True,True,103,2,98,0,0,0,0,0
+p11,119,True,True,128,4,119,0,0,0,0,0
+p12,1,True,True,8,0,1,0,0,0,0,0
+p13,47,True,True,57,2,47,0,0,0,0,0
+p14,115,True,True,138,4,115,0,0,0,0,1
+p15,140,True,True,148,4,140,0,0,0,0,0
+p16,146,True,True,153,5,146,0,0,0,2,1

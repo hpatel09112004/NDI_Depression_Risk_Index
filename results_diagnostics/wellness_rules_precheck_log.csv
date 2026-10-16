@@ -1,0 +1,17 @@
+pid,reports,timestamps_unparseable_or_without_timezone,reports_moved_by_W1,out_of_range_mood,out_of_range_stress,out_of_range_fatigue,out_of_range_sleep_quality,out_of_range_soreness,out_of_range_readiness,zeros_mood,zeros_stress,zeros_fatigue,zeros_sleep_quality,zeros_soreness,reports_dropped_W3,zeros_set_missing_W2_mood,zeros_set_missing_W2_stress,zeros_set_missing_W2_fatigue,zeros_set_missing_W2_sleep_quality,zeros_set_missing_W2_soreness,local_days_with_a_report,days_with_2plus_reports_W4,W4_days_choosing_mood,W4_days_values_differ_mood,W4_days_choosing_stress,W4_days_values_differ_stress,W4_days_choosing_fatigue,W4_days_values_differ_fatigue,W4_days_choosing_sleep_quality,W4_days_values_differ_sleep_quality,W4_days_choosing_soreness,W4_days_values_differ_soreness,W4_days_choosing_readiness,W4_days_values_differ_readiness
+p01,138,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,138,0,0,0,0,0,0,0,0,0,0,0,0,0
+p02,99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,99,0,0,0,0,0,0,0,0,0,0,0,0,0
+p03,82,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,75,7,7,0,7,0,7,0,7,0,7,0,7,0
+p04,145,0,2,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,143,2,2,1,2,1,2,0,2,2,2,1,2,1
+p05,137,0,0,0,0,0,0,0,0,2,2,2,2,2,2,0,0,0,0,0,134,1,1,0,1,0,1,1,1,0,1,0,1,0
+p06,147,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,147,0,0,0,0,0,0,0,0,0,0,0,0,0
+p07,133,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,132,1,1,0,1,1,1,0,1,1,1,0,1,0
+p08,104,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,103,1,1,0,1,0,1,0,1,1,1,1,1,1
+p09,102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,102,0,0,0,0,0,0,0,0,0,0,0,0,0
+p10,96,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,95,1,1,1,1,0,1,0,1,0,1,0,1,1
+p11,107,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,107,0,0,0,0,0,0,0,0,0,0,0,0,0
+p12,83,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,83,0,0,0,0,0,0,0,0,0,0,0,0,0
+p13,72,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,67,4,4,2,3,2,4,2,4,3,4,1,4,3
+p14,125,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,124,1,1,0,1,0,1,0,1,0,1,0,1,0
+p15,95,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,93,2,2,0,2,0,2,0,2,1,2,2,2,1
+p16,82,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,82,0,0,0,0,0,0,0,0,0,0,0,0,0
