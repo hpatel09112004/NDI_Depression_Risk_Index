@@ -1,0 +1,6 @@
+leak,standalone_inflation_v1_4_forward,standalone_inflation_v1_2_trailing,note
+No embargo (L0) -- literature-known reference leak,0.2800488005714546,,
+Whole-series normalisation (L1),0.0065525828905517,,
+Self-predictive proxy (L2),0.0163181085688005,0.2986423710531131,"Trailing target (v1.2): today's index lies inside the target window -- a leak. Forward target (v1.4): a naive persistence forecast, not a leak (rho 0.493 vs V3 0.477); reported as a reference row."
+In-sample weight selection (L3) -- inert for this arm,0.0,,
+Target built with tuned weights (L4),0.0379839998467353,,

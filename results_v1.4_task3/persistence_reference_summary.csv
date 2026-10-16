@@ -1,0 +1,5 @@
+target,reference,participants,participants_without_rho,days_used,mean_rho,ci95_lo,ci95_hi
+next-day mood,"persistence (today's value), no model",13,1,1097,0.16496521365333205,0.04521153599791542,0.2835282123374862
+next-day stress,"persistence (today's value), no model",14,0,1071,0.3107277366534723,0.19350783314866218,0.4219773532151246
+self-derived (v1.4),"persistence (today's value), no model",16,0,2030,0.49300827500435296,0.38826960409309785,0.5858122069665973
+raw-feature (v1.4),"persistence (today's value), no model",16,0,2030,0.25736428305702985,0.19273616716693892,0.33354522877310533
