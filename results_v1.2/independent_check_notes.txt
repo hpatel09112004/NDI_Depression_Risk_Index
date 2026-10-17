@@ -1,1 +1,0 @@
-(iii) NUMERICAL SENSITIVITY: a last-bit change in the target (max 1.1e-16) moves per-participant rho by up to 0.0039; mean rho moves by -0.0004 (V3) and -0.0003 (raw-RF); V3 - raw-RF moves by -0.0001.
