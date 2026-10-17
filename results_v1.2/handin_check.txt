@@ -1,0 +1,11 @@
+1. FILES in results_v1.2
+   22 of 22 present
+2. PROVENANCE
+   run_started 2026-10-07T07:47:18 | head_commit None | tag commit None
+   NOT TAGGED at run time -- state this in the deviation note; do not edit provenance.json by hand
+3. V1 REGENERATION (frozen archive vs the v1 re-run made alongside v1.2)
+   archived v1 arm means vs the v1 values used in v1_vs_corrected.csv: max |diff| = 8.3e-17
+   per participant, 15 of 15 matched: max |diff| = 0.0e+00
+   raw-target Wilcoxon q-values: max |diff| = 0.0e+00
+   V1 REGENERATION CHECK PASSED
+4. MEMO-FORMAT TABLES written: task1_table2_formatted.csv, task1_absolute_rho_formatted.csv

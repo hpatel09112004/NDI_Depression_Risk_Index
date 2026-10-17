@@ -1,0 +1,17 @@
+Participant p01: n = 152 days, T0 = 10, g = 6, k = 7
+First test fold: training rows 0..9 (0-based), test row 16
+Row s holds the features of calendar day s (T, I on day s; F from days <= s).
+[trailing_v1]
+  test target y[16] averages the index over days 9..15
+  last training row 9: its target averages days 2..8
+  training days inside the test-target window: [9]
+  last training target window touches the test day: False
+  purge drops 1 training row(s); last training row kept = 8  -> effective gap = 7 days
+[forward]
+  test target y[16] averages the index over days 17..23
+  last training row 9: its target averages days 10..16
+  training days inside the test-target window: none
+  last training target window touches the test day: True
+  purge drops 1 training row(s); last training row kept = 8  -> effective gap = 7 days
+Rows that do not follow the previous row by exactly one calendar day, per participant: {'p01': 0, 'p02': 0, 'p03': 4, 'p04': 1, 'p05': 3, 'p06': 0, 'p07': 1, 'p08': 1, 'p09': 0, 'p10': 1, 'p11': 0, 'p13': 4, 'p14': 1, 'p15': 2, 'p16': 0}
+Alignment used for every v1.2 number in this run: trailing_v1
