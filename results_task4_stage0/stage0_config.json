@@ -1,0 +1,20 @@
+{
+  "VERSION": "v1.4-task4-stage0",
+  "MEMO": "Task 3 review and Task 4 execution memo, Section 2",
+  "STATUS": "diagnostic, exploratory; never enters any reported comparison",
+  "ARM": "learned persistence: personalised Z's model (fold z-scoring, then Ridge with RIDGE_ALPHA = 1.0) given one feature, today's value of the target quantity",
+  "PROTOCOL": "the exact v1.4 / Task 3 fold protocol: V12-2 get_folds (T0 rule, embargo g = 6, fold size 1), the embargo check, purge_training_rows with the target's alignment, training rows and test days with a finite target, >= 5 training rows; the code is run_arms' fold loop with one arm",
+  "FEATURE": {
+    "self_derived": "today's causal index value (the index build_target returns, fixed lambda (0.2, 0.3, 0.5))",
+    "raw_feature": "today's causal raw composite (the quantity the raw-feature target smooths; T3-P (c))",
+    "mood_stress": "today's W1-W4 value; a training row or test day without it is dropped"
+  },
+  "PARTICIPANTS": {
+    "self_and_raw": "the v1.4 Table 1 / raw-feature participants (results_v1.4 per-participant files)",
+    "mood_and_stress": "the Task 3 eligible participants of each target"
+  },
+  "REFERENCE": "no-model persistence: Spearman(today's value, target) on the SAME days the learned arm scores; it must equal the archived Task 3 persistence values (T3-P) on the Task 3 days",
+  "DECISION": "PROCEED if, for every target, mean learned persistence >= 0.5 x mean no-model persistence on the same days; otherwise STOP and send the per-participant values (memo, Section 2)",
+  "WELLNESS_USE": "wellness values are a feature only for the mood / stress rows of this diagnostic",
+  "OUTPUT": "results_task4_stage0/"
+}

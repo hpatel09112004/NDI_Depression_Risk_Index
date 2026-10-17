@@ -1,0 +1,78 @@
+{
+  "label": "Stage 0b, diagnostic and exploratory (Stage 0 review memo, Section 1); gates nothing",
+  "definition": "a(s) = mean of the target over the training rows of that day's fold (the Ridge intercept); rho_anom = Spearman(f - a, y - a) per participant over Stage 0's days, averaged",
+  "rule": "learned >= 0.5 x no-model (anomaly rho) on all four targets -> refit drift explains the gap; otherwise the slopes are unstable on weak targets",
+  "all_four_pass": false,
+  "below_half": [
+    "raw-feature (v1.4)",
+    "next-day mood"
+  ],
+  "reading": "Under anomaly scoring, learned persistence stays below half the no-model value on: raw-feature (v1.4), next-day mood. Removing the refit drift does not close the gap there: the slopes themselves are unstable on weak targets.",
+  "summary": [
+    {
+      "target": "self-derived (v1.4)",
+      "participants": 16,
+      "participants_with_both": 16,
+      "days": 2030,
+      "nomodel_anom_mean": 0.466378,
+      "nomodel_anom_ci95_lo": 0.332404,
+      "nomodel_anom_ci95_hi": 0.586123,
+      "learned_anom_mean": 0.427477,
+      "learned_anom_ci95_lo": 0.305068,
+      "learned_anom_ci95_hi": 0.530138,
+      "ratio": 0.916587,
+      "learned_ge_half_nomodel": true,
+      "stage0_nomodel_mean": 0.493008,
+      "stage0_learned_mean": 0.4802
+    },
+    {
+      "target": "raw-feature (v1.4)",
+      "participants": 16,
+      "participants_with_both": 16,
+      "days": 2030,
+      "nomodel_anom_mean": 0.281466,
+      "nomodel_anom_ci95_lo": 0.223942,
+      "nomodel_anom_ci95_hi": 0.335146,
+      "learned_anom_mean": 0.140189,
+      "learned_anom_ci95_lo": 0.05478,
+      "learned_anom_ci95_hi": 0.219069,
+      "ratio": 0.498068,
+      "learned_ge_half_nomodel": false,
+      "stage0_nomodel_mean": 0.257364,
+      "stage0_learned_mean": -0.015038
+    },
+    {
+      "target": "next-day mood",
+      "participants": 14,
+      "participants_with_both": 13,
+      "days": 1063,
+      "nomodel_anom_mean": 0.482199,
+      "nomodel_anom_ci95_lo": 0.33604,
+      "nomodel_anom_ci95_hi": 0.616834,
+      "learned_anom_mean": 0.19435,
+      "learned_anom_ci95_lo": 0.013709,
+      "learned_anom_ci95_hi": 0.390771,
+      "ratio": 0.40305,
+      "learned_ge_half_nomodel": false,
+      "stage0_nomodel_mean": 0.160664,
+      "stage0_learned_mean": 0.040805
+    },
+    {
+      "target": "next-day stress",
+      "participants": 14,
+      "participants_with_both": 14,
+      "days": 1065,
+      "nomodel_anom_mean": 0.493728,
+      "nomodel_anom_ci95_lo": 0.373223,
+      "nomodel_anom_ci95_hi": 0.612305,
+      "learned_anom_mean": 0.254707,
+      "learned_anom_ci95_lo": 0.081215,
+      "learned_anom_ci95_hi": 0.447921,
+      "ratio": 0.515885,
+      "learned_ge_half_nomodel": true,
+      "stage0_nomodel_mean": 0.315362,
+      "stage0_learned_mean": 0.078205
+    }
+  ],
+  "finished": "2026-10-12T08:06:24+00:00"
+}

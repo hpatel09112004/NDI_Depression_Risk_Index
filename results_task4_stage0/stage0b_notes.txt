@@ -1,0 +1,5 @@
+STAGE 0b ANOMALY RE-SCORING -- diagnostic, exploratory; gates nothing (Stage 0 review memo, Section 1)
+a(s) = mean of the target over the training rows of the fold that scores day s (the Ridge intercept); rho_anom = Spearman(f(s) - a(s), y(s) - a(s)), per participant over the same days as Stage 0, averaged.
+Check: Stage 0's days and its ordinary learned / no-model rho are reproduced exactly.
+self-derived (v1.4): no-model 0.466 [0.332, 0.586] vs learned 0.427 [0.305, 0.530] (ratio 0.917); raw-feature (v1.4): no-model 0.281 [0.224, 0.335] vs learned 0.140 [0.055, 0.219] (ratio 0.498); next-day mood: no-model 0.482 [0.336, 0.617] vs learned 0.194 [0.014, 0.391] (ratio 0.403); next-day stress: no-model 0.494 [0.373, 0.612] vs learned 0.255 [0.081, 0.448] (ratio 0.516)
+READING: Under anomaly scoring, learned persistence stays below half the no-model value on: raw-feature (v1.4), next-day mood. Removing the refit drift does not close the gap there: the slopes themselves are unstable on weak targets.
