@@ -1,5 +1,0 @@
-SECTION 4 FACTS (v1.3 memo)
-1. Minimum training window: t0 = min(10, max(5, n // 3)). n ranges 142-156 rows over 15 participants (all >= 30: True); t0 values found: [10].
-2. Rows are recorded days. Rows that do not follow the previous row by exactly one calendar day, per participant: {'p01': 0, 'p02': 0, 'p03': 4, 'p04': 1, 'p05': 3, 'p06': 0, 'p07': 1, 'p08': 1, 'p09': 0, 'p10': 1, 'p11': 0, 'p13': 4, 'p14': 1, 'p15': 2, 'p16': 0} (total 18, 9 of 15 participants).
-   Smoothing (rolling over the index array), embargo and folds (ndi.blocked_tscv index ranges) and purge (target_support index sets) all operate on row positions; the date column enters no feature, target, fold or purge computation.
-3. v1.2 run: config written 2026-10-07T07:47:24+00:00, first result CSV written 2026-10-07T09:30:21+00:00 (config precedes results: True); head_commit = None, tag commit = None -> configuration fixed before the run, not version-tagged.
