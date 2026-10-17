@@ -1,0 +1,7 @@
+   PASS  11 of 11 files in results_sensitivity_anomaly
+   PASS  re-run reproduces the archive exactly (64 participant-targets x 4 arms)
+   PASS  ordinary persistence reproduces T3-P (60)
+   PASS  every analysed participant has a finite anomaly rho in all four arms
+   PASS  results_v1.4: no file modified
+   PASS  results_v1.4_task3: no file modified
+SENSITIVITY HAND-IN CHECK PASSED

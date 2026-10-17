@@ -1,0 +1,21 @@
+Target,Arm,n,Mean rho_anom [95% CI],P vs 0,Primary mean rho (archived)
+self-derived (v1.4),V-signed,16,"0.365 [0.222, 0.487]",0.000,0.377
+self-derived (v1.4),V3,16,"0.455 [0.373, 0.537]",0.000,0.477
+self-derived (v1.4),Raw-feature RF,16,"0.178 [0.101, 0.257]",0.001,0.264
+self-derived (v1.4),Personalised Z,16,"0.107 [0.008, 0.217]",0.130,0.194
+self-derived (v1.4),"Persistence (today's value), reference",16,"0.466 [0.332, 0.586]",0.000,n/a
+raw-feature (v1.4),V-signed,16,"0.101 [-0.033, 0.207]",0.159,0.088
+raw-feature (v1.4),V3,16,"0.079 [-0.065, 0.213]",0.274,0.085
+raw-feature (v1.4),Raw-feature RF,16,"0.080 [0.009, 0.147]",0.058,0.060
+raw-feature (v1.4),Personalised Z,16,"0.062 [0.005, 0.131]",0.159,-0.007
+raw-feature (v1.4),"Persistence (today's value), reference",16,"0.281 [0.224, 0.335]",0.000,n/a
+next-day mood,V-signed,14,"-0.008 [-0.069, 0.072]",0.670,0.055
+next-day mood,V3,14,"0.008 [-0.070, 0.072]",0.855,0.064
+next-day mood,Raw-feature RF,14,"0.016 [-0.046, 0.091]",0.808,0.048
+next-day mood,Personalised Z,14,"0.003 [-0.057, 0.078]",1.000,0.043
+next-day mood,"Persistence (today's value), reference",14,"0.507 [0.369, 0.639]",0.000,n/a
+next-day stress,V-signed,14,"0.023 [-0.049, 0.109]",0.761,0.076
+next-day stress,V3,14,"0.023 [-0.062, 0.141]",0.761,0.073
+next-day stress,Raw-feature RF,14,"-0.025 [-0.082, 0.059]",0.358,0.011
+next-day stress,Personalised Z,14,"-0.020 [-0.111, 0.064]",1.000,0.014
+next-day stress,"Persistence (today's value), reference",14,"0.473 [0.348, 0.604]",0.000,n/a
