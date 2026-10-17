@@ -1,6 +1,0 @@
-Comparison,Target,Mean delta rho [95% CI],HL median [95% CI],Wins/n,P,q (BH),"TOST (+/-0.10), 90% CI",Advantage >= 0.10 rejected,Artifact excluded
-V3 vs raw-RF,"next-day mood, without p12","0.022 [-0.038, 0.075]","0.027 [-0.034, 0.076]",9/13,0.414,0.946,"equivalent [-0.028, 0.067]",yes,yes
-V3 vs pers-Z,"next-day mood, without p12","0.016 [-0.056, 0.087]","0.020 [-0.067, 0.109]",8/13,0.635,0.946,"equivalent [-0.044, 0.076]",yes,yes
-V-signed vs raw-RF,"next-day mood, without p12","0.008 [-0.035, 0.055]","0.002 [-0.041, 0.057]",6/13,0.946,0.946,"equivalent [-0.028, 0.047]",yes,yes
-V-signed vs pers-Z,"next-day mood, without p12","0.002 [-0.047, 0.062]","-0.005 [-0.053, 0.052]",6/13,0.839,0.946,"equivalent [-0.039, 0.052]",yes,yes
-V3 vs V-signed,"next-day mood, without p12","0.014 [-0.045, 0.058]","0.021 [-0.045, 0.076]",8/13,0.542,n/a,"equivalent [-0.035, 0.052]",yes,n/a

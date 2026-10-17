@@ -1,5 +1,0 @@
-Target,Participants,Days used,Persistence mean rho [95% CI]
-next-day mood,13,1097,"0.165 [0.045, 0.284]"
-next-day stress,14,1071,"0.311 [0.194, 0.422]"
-self-derived (v1.4),16,2030,"0.493 [0.388, 0.586]"
-raw-feature (v1.4),16,2030,"0.257 [0.193, 0.334]"
