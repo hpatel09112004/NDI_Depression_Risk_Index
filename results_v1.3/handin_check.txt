@@ -1,0 +1,21 @@
+1. FILES in results_v1.3
+   PASS  27 of 27 present
+   PASS  no per-fold sensitivity file (not applicable under forward alignment)
+2. PROVENANCE
+   run_started 2026-10-07T21:05:03+00:00 | tag v1.3-forward -> 54b5c73491331e50911a002878541d0aa20b838e | tag commit time 2026-10-08T01:16:52+05:30
+   PASS  tag commit recorded
+   PASS  tag commit time precedes run_started
+   PASS  config used equals the config committed under the tag
+   PASS  VERSION = v1.3-forward and TARGET_ALIGNMENT = forward
+3. ARCHIVE results_v1.2
+   PASS  no file in results_v1.2 modified since this run started (25 files)
+4. CHECKS
+   PASS  fidelity check, no-look-ahead test, Task 2 clean-endpoint check (asserts in V12-3, V12-4, V12-7: run reached this cell)
+   PASS  independent check: 15 of 15 participants, max |diff| = 0.0e+00
+   PASS  forward target: [7] test rows dropped per participant, scored rows equal n_folds
+5. V1 REGENERATION (frozen archive vs this session's v1 re-run)
+   PASS  per participant, 15 matched: max |diff| = 0.0e+00
+   PASS  raw-target Wilcoxon q-values: max |diff| = 0.0e+00
+6. REPORT TABLES written to 3 decimals: task1_table2_formatted.csv, task1_absolute_rho_formatted.csv, task2_waterfall_cumulative_formatted.csv, task2_one_at_a_time_formatted.csv, task2_table4_inflation_column_formatted.csv, exploratory_target_swap_shift_formatted.csv
+
+HAND-IN CHECK PASSED: every check above passed

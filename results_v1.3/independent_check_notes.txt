@@ -1,0 +1,4 @@
+15 participants, 739s, alignment = forward
+(i)  forward target rebuilt from scratch vs V12 target: max |diff| = 1.1e-16; rows without a target per participant: [7]
+(ii) independent fold loop vs corrected Table 1 (v1.3): max |diff| = 0.0e+00
+INDEPENDENT CHECK PASSED: v1.3 clean endpoint (V3, raw-RF) reproduced without the V12 runner
