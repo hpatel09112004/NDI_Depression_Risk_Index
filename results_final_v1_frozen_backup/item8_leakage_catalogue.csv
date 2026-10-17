@@ -1,5 +1,0 @@
-leak,description,fixed_in
-I-denominator,"Normalisation denominators for I (std_ref, sleep-entropy max, missing-rate max) were computed over the whole series; fixed to compute on training-fold days only.",fold-internal normalisation (training days only)
-self-proxy,"4a/4b scores were correlated directly against the target with no model between, so the score equalled the target's own pre-smoothing value; this measured autocorrelation, not prediction. Fixed by fold-internal Ridge (train days only).","fold-internal Ridge, train days only"
-in-sample lambda,"Lambda was selected on the full in-sample grid; retained only as an optimistic bound, not the headline. Fixed via nested per-participant / LOPO calibration.",nested per-participant / LOPO calibration
-lambda-dependent target,"The earlier nested-primary number (0.5228) was computed before the target-leak fix and must not be cited; superseded by the fixed-target result, rho = 0.3523.","fixed pre-registered target lambda=(0.2,0.3,0.5)"

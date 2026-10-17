@@ -1,3 +1,0 @@
-dataset,n_participants,n_condition,n_control,median_days,inclusion_rule
-DEPRESJON,55,23.0,32.0,17.0,n_days >= 15
-PMData,15,,,152.0,n_days >= 15
