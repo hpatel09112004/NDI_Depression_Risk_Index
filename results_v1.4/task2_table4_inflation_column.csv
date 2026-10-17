@@ -1,0 +1,6 @@
+leak,standalone_inflation,note
+L0,0.28004880057145465,embargo off (g=0) and no purge; literature-known reference leak
+L1,0.006552582890551717,"whole-series normalisation: T/I/F, V-signed and imputation from the full series (v1 feature path)"
+L2,0.01631810856880056,"self-predictive proxy: target index at the most recent day, no model"
+L3,0.0,"in-sample weight selection: no pathway into RF-on-[T,I,F] (lambda never enters features) -- inert"
+L4,0.037983999846735395,"target index built with tuned lambda* instead of fixed (0.2,0.3,0.5)"

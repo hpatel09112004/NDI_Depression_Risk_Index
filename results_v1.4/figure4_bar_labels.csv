@@ -1,0 +1,8 @@
+bar,state,v3_mean_rho
+All leaks,All leaks ON,0.564
+− self-proxy (L2),"-L2 (left: L0,L1,L3,L4)",0.778
+− tuned-weight target (L4),"-L4 (left: L0,L1,L3)",0.75
+− in-sample weights (L3),"-L3 (left: L0,L1)",0.75
+− whole-series normalisation (L1),-L1 (left: L0),0.757
+"Leak-free
+(− no embargo (L0))",-L0 (left: none),0.477

@@ -1,0 +1,5 @@
+V1.4 DATA FACTS
+1. Minimum training window: t0 = min(10, max(5, n // 3)). n ranges 141-152 rows over 16 participants; t0 values found: [10].
+2. Rows are calendar days: one row per local date from the Fitbit daily files, dates unique and consecutive for all 16 participants (D-2). Rows removed relative to v1.3 (duplicated days): {'p03': 4, 'p04': 1, 'p05': 3, 'p07': 1, 'p08': 1, 'p10': 1, 'p13': 4, 'p14': 1, 'p15': 2} (total 18).
+3. p12: loaded with the max heart rate fix; 152 rows; scored test folds (forward target) 129; enters the analysis under the existing rules (>= 15 rows, >= 10 scored test folds): YES.
+4. Wellness table (W1-W4, cell W-1; not used in Tasks 1-2): 1747 reports -> 1724 participant-days. W1 moved 10 reports to their local date; W3 dropped 2 blank reports; W2 set 3 remaining zeros to missing; W4 chose among 2+ reports on 20 days (mood values differed on 4).

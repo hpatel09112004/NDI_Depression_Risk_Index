@@ -1,0 +1,1 @@
+p12 entered v1.4 Table 1. Supplementary: the primary path re-run without p12 (cohort and donor pools), n = 15 (self-derived), 15 (raw-feature). Files: supplementary_without_p12_*.

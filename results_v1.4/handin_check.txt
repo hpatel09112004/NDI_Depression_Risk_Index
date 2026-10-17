@@ -1,0 +1,31 @@
+1. FILES in results_v1.4
+   PASS  37 of 37 present
+   PASS  no per-fold sensitivity file (not applicable under forward alignment)
+2. PROVENANCE
+   run_started 2026-10-10T17:55:41+00:00 | tag v1.4 -> 4dabbfe75a68bba0c849b6e1915652f34442acd6 | tag commit time 2026-10-10T22:35:14+05:30 | HEAD 4dabbfe75a68bba0c849b6e1915652f34442acd6
+   PASS  tag commit recorded
+   PASS  run made from the tagged commit (HEAD = tag commit)
+   PASS  tag commit time precedes run_started
+   PASS  config used equals the config committed under the tag
+   PASS  VERSION = v1.4, TARGET_ALIGNMENT = forward, W1-W4 and p12 decision in the config
+   PASS  F_SCALE = 1.0 (frozen 1.0)
+3. ARCHIVES untouched since this run started
+   PASS  results_v1.2: no file modified (25 files)
+   PASS  results_v1.3: no file modified (34 files)
+   PASS  results_final_v1_frozen_backup: no file modified (17 files)
+4. CHECKS
+   PASS  fidelity check, no-look-ahead test, Task 2 clean-endpoint check, D-2 date check, W-1 wellness check (asserts in V12-3, V12-4, V12-7, D-2, W-1: run reached this cell)
+   PASS  independent check: 16 of 16 participants, max |diff| = 0.0e+00
+   PASS  forward target: [7] test rows dropped per participant, scored rows equal n_folds
+5. DATA (v1.4 memo, Sections 2-4)
+   PASS  one row per calendar date: 16 participants, 0 duplicated, 0 non-consecutive, 0 unparseable, no wellness column in days_df
+   rows removed relative to v1.3: 18 in 9 participants (the duplicated days)
+   PASS  no participant gained rows relative to v1.3
+   p12: loaded True, rows 152, scored test folds 129, in Table 1: True
+   PASS  supplementary row without p12 present if p12 is loaded
+   PASS  wellness table: one row per participant and local date (1724 rows)
+6. INFORMATION (not a check): frozen v1 record vs this session's v1 cells on the v1.4 data
+   15 participants in both; largest per-participant |difference| = 0.227 (expected to be non-zero: duplicated rows removed, p12 added to the donor pools)
+7. REPORT TABLES written to 3 decimals: task1_table2_formatted.csv, task1_absolute_rho_formatted.csv, task2_waterfall_cumulative_formatted.csv, task2_one_at_a_time_formatted.csv, task2_table4_inflation_column_formatted.csv, exploratory_target_swap_shift_formatted.csv
+
+HAND-IN CHECK PASSED: every check above passed

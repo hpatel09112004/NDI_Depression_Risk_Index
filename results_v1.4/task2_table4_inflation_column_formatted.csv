@@ -1,0 +1,6 @@
+Leak,Standalone inflation of mean rho,Definition
+no embargo (L0),0.280,embargo off (g=0) and no purge; literature-known reference leak
+whole-series normalisation (L1),0.007,"whole-series normalisation: T/I/F, V-signed and imputation from the full series (v1 feature path)"
+self-proxy (L2),0.016,"self-predictive proxy: target index at the most recent day, no model"
+in-sample weights (L3),0.000,"in-sample weight selection: no pathway into RF-on-[T,I,F] (lambda never enters features) -- inert"
+tuned-weight target (L4),0.038,"target index built with tuned lambda* instead of fixed (0.2,0.3,0.5)"
