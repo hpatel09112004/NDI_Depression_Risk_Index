@@ -1,0 +1,33 @@
+target,pid,rows,test_rows,rows_with_next_day_value,scored_test_folds,test_days_without_next_day_value,distinct_values_on_scored_days,scored_days_where_W4_chose_among_2plus_values,scored_days_where_those_values_differed,eligible,exclusion_reason
+mood,p01,152,136,137,122,14,4,0,0,True,
+mood,p02,152,136,99,89,47,2,0,0,False,"fewer than 3 distinct mood values on the scored test days (2: [3.0, 4.0])"
+mood,p03,152,136,74,63,73,4,6,0,True,
+mood,p04,152,136,142,126,10,4,2,1,True,
+mood,p05,152,136,133,119,17,4,1,0,True,
+mood,p06,152,136,147,131,5,3,0,0,True,
+mood,p07,148,132,132,116,16,3,1,0,True,
+mood,p08,143,127,103,88,39,4,1,0,True,
+mood,p09,152,136,102,92,44,5,0,0,True,
+mood,p10,148,132,95,84,48,3,1,1,True,
+mood,p11,152,136,106,95,41,2,0,0,False,"fewer than 3 distinct mood values on the scored test days (2: [2.0, 3.0])"
+mood,p12,152,136,83,73,63,3,0,0,True,
+mood,p13,152,136,67,56,80,4,3,1,True,
+mood,p14,141,125,124,111,14,3,1,0,True,
+mood,p15,146,130,93,82,48,4,1,0,True,
+mood,p16,152,136,82,71,65,4,0,0,True,
+stress,p01,152,136,137,122,14,2,0,0,False,"fewer than 3 distinct stress values on the scored test days (2: [2.0, 3.0])"
+stress,p02,152,136,99,89,47,2,0,0,False,"fewer than 3 distinct stress values on the scored test days (2: [3.0, 4.0])"
+stress,p03,152,136,74,63,73,3,6,0,True,
+stress,p04,152,136,141,125,11,5,2,1,True,
+stress,p05,152,136,133,119,17,4,1,0,True,
+stress,p06,152,136,147,131,5,3,0,0,True,
+stress,p07,148,132,132,116,16,3,1,1,True,
+stress,p08,143,127,103,88,39,4,1,0,True,
+stress,p09,152,136,102,92,44,4,0,0,True,
+stress,p10,148,132,95,84,48,4,1,0,True,
+stress,p11,152,136,107,96,40,3,0,0,True,
+stress,p12,152,136,83,73,63,3,0,0,True,
+stress,p13,152,136,67,56,80,4,2,1,True,
+stress,p14,141,125,124,111,14,3,1,0,True,
+stress,p15,146,130,93,82,48,4,1,0,True,
+stress,p16,152,136,82,71,65,4,0,0,True,

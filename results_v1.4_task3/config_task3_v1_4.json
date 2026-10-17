@@ -1,0 +1,52 @@
+{
+  "VERSION": "v1.4-task3",
+  "BASE_VERSION": "v1.4",
+  "BASE_TAG": "v1.4",
+  "ANALYSIS_SETTINGS": "inherited unchanged from config_v1_4.json under tag v1.4: features, fold-local statistics, fold generator (T0 rule, embargo g = 6, fold size 1), purge rule, four arms, models, seed, bootstrap, SESOI. Only the target column changes.",
+  "TARGETS": {
+    "primary": "mood",
+    "secondary": "stress"
+  },
+  "TARGETS_EXCLUDED": "sleep quality and sleep duration (share structure with the Fitbit sleep features); readiness, fatigue and soreness (sport-load constructs) -- revision analyses memo, Task 3",
+  "TARGET_SOURCE": "pmsys/wellness.csv through the W1-W4 table built in cell W-1 (config_v1_4.json WELLNESS_RULES); no wellness.csv field enters any arm's features (asserted in T3-1)",
+  "TARGET_FORM": "raw next-day value, not smoothed: row s (Fitbit calendar day d_s) is scored against the W1-W4 value of local day d_s + 1",
+  "DAY_ALIGNMENT": "report dated by its local Europe/Oslo calendar day (W1), the day boundary of the Fitbit daily files",
+  "TARGET_ALIGNMENT": "next_day",
+  "PURGE": "v1.4 purge rule applied with target support {s + 1}; with embargo g = 6 it removes no training row",
+  "EMBARGO_G": 6,
+  "MISSING_TARGET": "test day without a next-day value: dropped from scoring, not imputed; training rows without a target: dropped from that fold's fit",
+  "ELIGIBILITY": {
+    "min_scored_test_folds": 10,
+    "min_distinct_target_values": 3,
+    "applied_to": "each target separately, on that target's values over the scored test days (the memo states the rule for mood; stress uses the same rule on stress values)"
+  },
+  "MIN_ELIGIBLE_FOR_TESTS": 10,
+  "STATISTICS": "as Task 1 (V12-6 functions, unchanged): mean delta rho with BCa 95% CI (10,000 resamples, seed 42); Hodges-Lehmann median with BCa 95% CI; paired Wilcoxon P; BH q across the four neutrosophic-vs-baseline comparisons within each target; TOST at +/-0.10 on the 90% CI; advantage >= 0.10 rejected if the upper 90% bound < 0.10; absolute rho per arm with BCa 95% CI and one-sample Wilcoxon vs 0. V3 vs V-signed reported without q.",
+  "ARTIFACT_BOUND": "upper 95% bound of each Task 3 comparison vs the self-derived advantage computed on the SAME eligible participants (mean over them, from results_v1.4/table1_corrected_self_target_per_participant.csv; without-p12 rows: from results_v1.4/supplementary_without_p12_self_target_per_participant.csv). n/a for V3 vs V-signed (no q) -- v1.4 review memo, Section 4 item 1",
+  "COMPLETE_PAIRS": "every eligible participant must have a finite rho in all four arms, so every paired test uses the same n; otherwise the run stops (v1.4 review memo, Section 4 item 2)",
+  "P12": "included in the primary analysis (guide's decision, v1.4 review memo Section 1: its exclusion was a loader bug and it meets the rules fixed before any result). If p12 is eligible for a target, that target is also reported without p12 (p12 removed from the cohort and from every donor pool) as a sensitivity analysis",
+  "PERSISTENCE_REFERENCES": {
+    "status": "reference rows outside the BH set; fixed here before any Task 3 result (v1.4 review memo, Section 4 items 3-4)",
+    "mood_and_stress": "forecast for row s = the W1-W4 value of day d_s (today's report) for the next-day value; scored on the Task 3 scored test days of the eligible participants where today's value exists; per-participant Spearman rho; mean rho with BCa 95% CI; days used; per-participant values saved",
+    "self_derived": "the L2 proxy (l2_proxy_rho: forward target, fixed lambda (0.2, 0.3, 0.5), no model) recomputed for all v1.4 participants; its mean must equal the v1.4 'Clean + L2 only' value in results_v1.4/task2_one_at_a_time.csv; per-participant values saved; paired V3 vs persistence (mean delta rho, BCa 95% CI, Wilcoxon P), labelled exploratory",
+    "raw_feature": "today's causal raw composite (the quantity the raw-feature target smooths) as the forecast of the raw-feature target; reference only, to show whether that target is predictable at all"
+  },
+  "L2_UNDER_FORWARD_TARGET": "the self-proxy is a naive persistence forecast, not a leak (guide's decision, v1.4 review memo Section 2): Figure 4 is redrawn from the L2-removed state; Table 4 shows L2 under both targets (v1.2 trailing, v1.4 forward)",
+  "SLEEP_SCORE_DATING": "checked before tagging (results_diagnostics/sleep_score_check_*): v1.4 features kept unchanged",
+  "REPORTING_FROM_V1_4": [
+    "target-swap shift without p12",
+    "Figure 4 redrawn from the L2-removed state",
+    "Table 4 standalone inflation with L2 under both targets",
+    "formatted Table 2 with 'artifact excluded' n/a for V3 vs V-signed",
+    "written to results_v1.4_task3; results_v1.4 stays read-only"
+  ],
+  "W4_LOG": "number of scored test days whose target day had 2+ valid values of the item, and on how many they differed",
+  "FIGURE": "Figure 2 as three panels: (A) self-derived and (B) raw-feature targets from results_v1.4, (C) next-day mood from this run; stress in a supplementary figure",
+  "CHECKS": [
+    "sleep-score check passed (results_diagnostics/sleep_score_check_verdict.json)",
+    "v1.4 corrected Table 1 and raw-feature comparison reproduce results_v1.4 exactly, first and last",
+    "wellness table equals results_v1.4/wellness_daily_W1_W4.csv",
+    "independent recomputation of the mood target from wellness.csv and of V3 / raw-RF on it"
+  ],
+  "REPORTING_DECIMALS": 3
+}

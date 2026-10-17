@@ -1,0 +1,6 @@
+Comparison,Target,Mean delta rho [95% CI],HL median [95% CI],Wins/n,P,q (BH),"TOST (+/-0.10), 90% CI",Advantage >= 0.10 rejected,Artifact excluded
+V3 vs raw-RF,"next-day stress, without p12","0.072 [0.013, 0.130]","0.069 [-0.001, 0.126]",9/13,0.068,0.188,"inconclusive [0.022, 0.121]",no,yes
+V3 vs pers-Z,"next-day stress, without p12","0.061 [-0.009, 0.165]","0.038 [-0.016, 0.155]",8/13,0.273,0.365,"inconclusive [0.002, 0.148]",no,yes
+V-signed vs raw-RF,"next-day stress, without p12","0.061 [0.001, 0.134]","0.051 [0.001, 0.128]",9/13,0.094,0.188,"inconclusive [0.010, 0.123]",no,no
+V-signed vs pers-Z,"next-day stress, without p12","0.050 [-0.027, 0.149]","0.041 [-0.050, 0.150]",7/13,0.414,0.414,"inconclusive [-0.015, 0.132]",no,yes
+V3 vs V-signed,"next-day stress, without p12","0.011 [-0.095, 0.077]","0.062 [-0.081, 0.097]",9/13,0.542,n/a,"equivalent [-0.077, 0.067]",yes,n/a

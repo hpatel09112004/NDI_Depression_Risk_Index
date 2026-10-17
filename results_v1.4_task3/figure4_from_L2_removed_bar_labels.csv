@@ -1,0 +1,8 @@
+bar,state,v3_mean_rho,ci95,inert
+"Start: four leaks on
+(L0, L1, L3, L4)","-L2 (left: L0,L1,L3,L4)",0.778,"[0.735, 0.830]",False
+− tuned-weight target (L4),"-L4 (left: L0,L1,L3)",0.75,"[0.709, 0.799]",False
+− in-sample weights (L3),"-L3 (left: L0,L1)",0.75,"[0.709, 0.799]",True
+− whole-series normalisation (L1),-L1 (left: L0),0.757,"[0.716, 0.804]",False
+"Leak-free
+(− no embargo (L0))",-L0 (left: none),0.477,"[0.371, 0.590]",False

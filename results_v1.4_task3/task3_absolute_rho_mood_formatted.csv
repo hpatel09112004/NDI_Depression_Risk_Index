@@ -1,0 +1,5 @@
+Arm,Target,n,Mean rho [95% CI],P vs 0
+V-signed,next-day mood,14,"0.055 [0.016, 0.100]",0.042
+V3,next-day mood,14,"0.064 [0.010, 0.125]",0.049
+Raw-feature RF,next-day mood,14,"0.048 [-0.009, 0.101]",0.153
+Personalised Z,next-day mood,14,"0.043 [-0.011, 0.092]",0.153

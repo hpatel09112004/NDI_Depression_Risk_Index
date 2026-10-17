@@ -1,0 +1,7 @@
+REPORTING NOTES (v1.4 review memo)
+1. p12 is included in the primary analysis; the without-p12 numbers are a sensitivity analysis. Not robust to removing p12, and to be written as such: V3 vs V-signed on the self-derived target (P = .018 with p12, .135 without) and V-signed vs raw-RF (q = .039 with, .055 without).
+2. Under the forward target the self-proxy (L2) is a naive persistence forecast, not a leak. Figure 4's cumulative chain starts from the L2-removed state: 0.778 -> 0.750 -> 0.750 -> 0.757 -> 0.477.
+3. The raw-feature target is a floor: every arm's mean rho is below 0.10. Say so wherever its null is reported.
+4. The equivalence of V3 and V-signed on the raw-feature target is not a finding: both arms are near zero there.
+5. 'Artifact excluded' is n/a for V3 vs V-signed (no q) in Table 2.
+6. Target-swap shift without p12 (exploratory, sensitivity): reproduced; matches ma'am's values: True.

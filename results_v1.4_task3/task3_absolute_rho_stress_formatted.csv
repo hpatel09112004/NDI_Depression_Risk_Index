@@ -1,0 +1,5 @@
+Arm,Target,n,Mean rho [95% CI],P vs 0
+V-signed,next-day stress,14,"0.076 [0.023, 0.132]",0.035
+V3,next-day stress,14,"0.073 [0.024, 0.133]",0.035
+Raw-feature RF,next-day stress,14,"0.011 [-0.045, 0.070]",0.808
+Personalised Z,next-day stress,14,"0.014 [-0.057, 0.072]",0.583
