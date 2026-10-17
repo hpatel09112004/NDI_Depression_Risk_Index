@@ -1,0 +1,16 @@
+pid,rows,unique_dates,duplicated_dates,extra_rows,duplicate_rows_have_identical_features,calendar_gaps_after_dedup,wellness_reports,reports_whose_utc_date_differs_from_local_date,dates_with_2plus_reports_local,timestamps_carry_timezone
+p01,152,152,0,0,True,0,138,0,0,True
+p02,152,152,0,0,True,0,99,0,0,True
+p03,156,152,4,4,True,0,82,7,7,True
+p04,153,152,1,1,True,0,145,2,2,True
+p05,155,152,3,3,True,0,137,0,3,True
+p06,152,152,0,0,True,0,147,0,0,True
+p07,149,148,1,1,True,0,133,0,1,True
+p08,144,143,1,1,True,0,104,0,1,True
+p09,152,152,0,0,True,0,102,0,0,True
+p10,149,148,1,1,True,0,96,0,1,True
+p11,152,152,0,0,True,0,107,0,0,True
+p13,156,152,3,4,True,0,72,1,5,True
+p14,142,141,1,1,True,0,125,0,1,True
+p15,148,146,2,2,True,0,95,0,2,True
+p16,152,152,0,0,True,0,82,0,0,True

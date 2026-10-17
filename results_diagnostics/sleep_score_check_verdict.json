@@ -1,0 +1,10 @@
+{
+  "verdict": "PASS",
+  "reason": "the only mismatches are among the known shifted scores (0 rows: none); record as a deviation and keep the v1.4 features unchanged for Task 3",
+  "mismatches_total": 0,
+  "mismatches_known_shifted": 0,
+  "mismatches_other": 0,
+  "scores_without_matching_log": 2,
+  "cell5_dates_with_2plus_scores": 6,
+  "sleep_scores_total": 1836
+}
