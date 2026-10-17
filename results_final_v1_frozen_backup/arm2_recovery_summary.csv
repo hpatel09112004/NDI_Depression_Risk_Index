@@ -1,0 +1,19 @@
+snr,channel,test,rho,expected
+0.5,T,"Spearman(T, state) [observed days]",-0.09820623033695312,negative
+0.5,T,"Spearman(T, -level_dev) [observed days]",0.9281975093743219,positive
+0.5,F,"Spearman(mean F, true_b)",-0.8464285714285712,"negative (module convention, see note)"
+0.5,F,"Spearman(mean F, -true_b) [sign-aligned]",0.8464285714285712,positive
+0.5,I,"Spearman(I, true_missing) [all days]",0.9791874293737218,positive
+0.5,I,"Spearman(I, true_instability) [all days]",0.11880369435832136,"positive, weak (underpowered, see note)"
+1.0,T,"Spearman(T, state) [observed days]",-0.2031994213419696,negative
+1.0,T,"Spearman(T, -level_dev) [observed days]",0.8667596080854846,positive
+1.0,F,"Spearman(mean F, true_b)",-0.9107142857142855,"negative (module convention, see note)"
+1.0,F,"Spearman(mean F, -true_b) [sign-aligned]",0.9107142857142855,positive
+1.0,I,"Spearman(I, true_missing) [all days]",0.973826014500599,positive
+1.0,I,"Spearman(I, true_instability) [all days]",0.11521617748328125,"positive, weak (underpowered, see note)"
+2.0,T,"Spearman(T, state) [observed days]",-0.4885874920028507,negative
+2.0,T,"Spearman(T, -level_dev) [observed days]",0.8500733416942642,positive
+2.0,F,"Spearman(mean F, true_b)",-0.7714285714285712,"negative (module convention, see note)"
+2.0,F,"Spearman(mean F, -true_b) [sign-aligned]",0.7714285714285712,positive
+2.0,I,"Spearman(I, true_missing) [all days]",0.9480178968056712,positive
+2.0,I,"Spearman(I, true_instability) [all days]",0.11873844439951763,"positive, weak (underpowered, see note)"

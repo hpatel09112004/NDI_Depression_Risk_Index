@@ -1,0 +1,114 @@
+[
+  {
+    "item": 1,
+    "description": "Data: n participants, days/participant, inclusion rule",
+    "cell": "CELL 6A, data_summary",
+    "file": "data_summary.csv",
+    "saved_at": "2026-08-24T10:22:03"
+  },
+  {
+    "item": 2,
+    "description": "Decomposition definitions, CONFIG, fixed-target lambda, embargo g",
+    "cell": "environment + CONFIG freeze",
+    "file": "config_frozen.json",
+    "saved_at": "2026-08-29T18:23:53"
+  },
+  {
+    "item": 3,
+    "description": "Primary: within-participant rho, PMData n_folds>=10, all 4 arms",
+    "cell": "CELL 14.11",
+    "file": "primary_pmdata_rho.csv",
+    "saved_at": "2026-08-24T06:23:39"
+  },
+  {
+    "item": 3,
+    "description": "Secondary: DEPRESJON, all participants, all 4 arms (context, not primary)",
+    "cell": "CELL 14.11",
+    "file": "secondary_depresjon_rho.csv",
+    "saved_at": "2026-08-24T06:23:41"
+  },
+  {
+    "item": 4,
+    "description": "Raw-target rerun: 4 paired Wilcoxon + BH q (decisive null)",
+    "cell": "CELL 14.11 R1-b",
+    "file": "raw_target_wilcoxon.csv",
+    "saved_at": "2026-08-24T11:05:56"
+  },
+  {
+    "item": 5,
+    "description": "V3 vs V-signed null on primary endpoint, stated as equivalence",
+    "cell": "CELL 14.11 v3_vs_vsigned",
+    "file": "item5_v3_vs_vsigned.csv",
+    "saved_at": "2026-08-24T10:23:21"
+  },
+  {
+    "item": 6,
+    "description": "4a vs 4b comparison (4b underperforms; DEPRESJON >=10-fold subset)",
+    "cell": "CELL C1, 4a_vs_4b",
+    "file": "item6_4a_vs_4b.csv",
+    "saved_at": "2026-08-24T10:24:06"
+  },
+  {
+    "item": 7,
+    "description": "All-pairs independence (real data): T-F/T-I/F-I, Spearman + shuffle-null MI + norm.MI + eff.rank, both datasets, BH-corrected",
+    "cell": "B2",
+    "file": "item7_independence_real_data.csv",
+    "saved_at": "2026-08-24T10:42:00"
+  },
+  {
+    "item": 8,
+    "description": "Leakage catalogue: the four genuine leaks found and fixed (I-denominator, self-proxy, in-sample lambda, lambda-dependent target). adaptive-T0 excluded -- documentation fix, not a leak.",
+    "cell": "ITEM 8",
+    "file": "item8_leakage_catalogue.csv",
+    "saved_at": "2026-09-05T05:50:25.563461"
+  },
+  {
+    "item": 9,
+    "description": "Lambda-instability: distinct vectors, F-dominant, not point-identified",
+    "cell": "A3",
+    "file": "item9_lambda_instability.csv",
+    "saved_at": "2026-08-24T06:42:28"
+  },
+  {
+    "item": 10,
+    "description": "AUROC + cross-participant tests (null, BH q)",
+    "cell": "14.11d",
+    "file": "item10_auroc_cross_participant.csv",
+    "saved_at": "2026-08-24T06:33:39"
+  },
+  {
+    "item": 11,
+    "description": "Arm 2 recovery: T/F/I per SNR (I=missingness-not-instability caveat)",
+    "cell": "CELL C2.4",
+    "file": "arm2_recovery_summary.csv",
+    "saved_at": "2026-08-24T06:54:55"
+  },
+  {
+    "item": 12,
+    "description": "Arm 2 independence: eff.rank ~3.0 per SNR",
+    "cell": "CELL C2.5",
+    "file": "arm2_independence_eff_rank.csv",
+    "saved_at": "2026-08-24T06:55:26"
+  },
+  {
+    "item": 12,
+    "description": "Arm 2 independence: per-pair Spearman + shuffle-null MI",
+    "cell": "CELL C2.5",
+    "file": "arm2_independence_pairs.csv",
+    "saved_at": "2026-08-24T06:55:26"
+  },
+  {
+    "item": 7,
+    "description": "Per-day T/I/F components (PMData) backing the independence figure",
+    "cell": "CELL 14.9",
+    "file": "components_pmdata.csv",
+    "saved_at": "2026-09-13T09:09:18.211456"
+  },
+  {
+    "item": 7,
+    "description": "Per-day T/I/F components (DEPRESJON) backing the independence figure",
+    "cell": "CELL 14.9",
+    "file": "components_depresjon.csv",
+    "saved_at": "2026-09-13T09:09:18.232830"
+  }
+]

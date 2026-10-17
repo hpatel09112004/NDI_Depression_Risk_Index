@@ -1,0 +1,33 @@
+{
+  "RANDOM_SEED": 42,
+  "T0": 14,
+  "EMBARGO_G": 6,
+  "FOLD_H": 1,
+  "SMOOTH_K": 7,
+  "LAMBDA_STEP": 0.05,
+  "LAMBDA_ETA": 0.05,
+  "LAMBDA_T": 0.2,
+  "LAMBDA_I": 0.3,
+  "LAMBDA_F": 0.5,
+  "F_SCALE": 3.0,
+  "N_BOOT": 2000,
+  "PERM_REPEATS": 30,
+  "MADRS_THRESHOLD": 7,
+  "PHQ_THRESHOLD": 3,
+  "RF_PARAMS": {
+    "n_estimators": 100,
+    "max_depth": 4,
+    "min_samples_leaf": 2,
+    "random_state": 42
+  },
+  "GB_PARAMS": {
+    "n_estimators": 200,
+    "learning_rate": 0.05,
+    "max_depth": 3,
+    "subsample": 0.8,
+    "random_state": 42
+  },
+  "RIDGE_ALPHA": 1.0,
+  "W_MISS": 0.5,
+  "W_INST": 0.5
+}
