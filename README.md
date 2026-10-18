@@ -204,6 +204,7 @@ NDI_Depression_Risk_Index/
 - "Task 1", "Task 2" and "Task 3" in file names are the revision's work packages: corrected accuracy with bounded nulls (Task 1), leak quantification (Task 2), and the self-report targets with persistence references (Task 3).
 - "Figure 4" and "Table 4" in some file names are the revision's working numbers. In the manuscript the leak waterfall is **Figure 3** and the leak table is **Table 3**.
 - The folder `results_task4_stage0/` holds the learnability diagnostic and keeps the name the notebook writes to; renaming it would break the notebook's output path and its `provenance.json` record.
+- `NDI_stage0_learnability.ipynb` has the same code as `NDI_task4_stage0.ipynb` in tag `v1.4-task4`. The tagged copy was committed before the run and has no outputs; the copy here is the executed notebook, saved with its outputs.
 - Each run's results folder also holds a copy of the configuration file the run used.
 
 **Not in the repository:** the raw datasets (Section 6), and scratch or working folders that the manuscript does not cite.
@@ -235,7 +236,7 @@ Commit hashes are the first seven characters of those recorded in each run's `pr
 
 **Status labels used in the manuscript:**
 - **Original analysis:** the primary endpoint, arms, evaluation protocol and raw-feature control (tag `v1`).
-- **Revision analyses:** specified after the original results were known, each fixed in a configuration file before its own run. From v1.3 onward each configuration was committed and tagged before the run; v1.2 was not tagged.
+- **Revision analyses:** specified after the original results were known, each fixed in a configuration file before its own run. From v1.3 onward each tagged run (v1.3-forward, v1.4, v1.4-task3) had its configuration committed and tagged before the run; v1.2 was not tagged, and the two post hoc analyses ran from the v1.4-task3 commit without tags of their own.
 - **Post hoc:** quantities defined after their own results were seen: the learnability diagnostic and the anomaly correlation.
 - **Exploratory:** quantities defined before their results but outside the primary family: the target-swap shift, and V3 vs persistence.
 
