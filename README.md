@@ -7,7 +7,7 @@
 > **Manuscript:** *Evaluating a Neutrosophic Daily Depression Index From Wearable Data Against Self-Derived and Independent Targets: Leakage-Free Methodological Evaluation Study.*
 > Harsh Patel, Dr. Ilanthenral Kandasamy. Submitted to *JMIR AI*, 2026.
 >
-> **This repository holds** the analysis code, the configuration files, the archived output of every run behind the manuscript, and the five Multimedia Appendix files. Every number in the manuscript can be found in a file here without running anything (see [Section 3](#3-where-every-manuscript-number-comes-from)). The release cited in the manuscript is **`v1.5-final`**.
+> **This repository holds** the analysis code, the configuration files, the archived output of every run behind the manuscript, and the five Multimedia Appendix files. Every number in the manuscript can be found in a file here without running anything (see [Section 3](#3-where-every-manuscript-number-comes-from)). The release cited in the manuscript is **`v1.5-final`** (tagged 18 October 2026).
 
 ---
 
@@ -220,7 +220,7 @@ NDI_Depression_Risk_Index/
 | v1.4 | `v1.4` (`4dabbfe`) | One row per calendar date (18 duplicated rows removed); p12 included (n = 16); self-report rules W1–W4; analysis without p12 | `results_v1.4/` |
 | v1.4 with self-report targets | `v1.4-task3` (`1a3c297`) | Next-day mood and stress; persistence references; Figure 2; Table 3 | `results_v1.4_task3/` |
 | Post hoc analyses | run from the `v1.4-task3` commit, not tagged separately | Learnability diagnostic; anomaly-correlation sensitivity | `results_task4_stage0/`, `results_sensitivity_anomaly/` |
-| Final package | `v1.5-final` | Multimedia Appendices, this README and the repository state cited in the manuscript; no new analysis | all of the above |
+| Final package | `v1.5-final` (tagged 18 October 2026) | Multimedia Appendices, this README and the repository state cited in the manuscript; no new analysis | all of the above |
 
 Commit hashes are the first seven characters of those recorded in each run's `provenance.json` (for `v1`, from the repository's tag list). Run times and the full run order are in Multimedia Appendix 4.
 
@@ -453,7 +453,7 @@ The original v1 outputs with their `manifest.json`, copied before any correction
 
 **This work:** Patel H, Kandasamy I. Evaluating a neutrosophic daily depression index from wearable data against self-derived and independent targets: leakage-free methodological evaluation study. Submitted to *JMIR AI*, 2026. (DOI to be added on publication.)
 
-**This repository:** Patel H, Kandasamy I. NDI_Depression_Risk_Index: analysis code, configuration files, and results archive, release v1.5-final. GitHub. 2026. https://github.com/hpatel09112004/NDI_Depression_Risk_Index
+**This repository:** Patel H, Kandasamy I. NDI_Depression_Risk_Index: analysis code, configuration files, and results archive, release v1.5-final. GitHub. 2026. URL: https://github.com/hpatel09112004/NDI_Depression_Risk_Index [accessed 2026-10-18]
 
 **Datasets:** please cite PMData and DEPRESJON as in Section 6.
 
