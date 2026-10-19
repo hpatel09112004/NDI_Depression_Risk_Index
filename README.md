@@ -4,10 +4,10 @@
 [![Python 3](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/)
 [![Platform: Google Colab](https://img.shields.io/badge/platform-Google%20Colab-orange.svg)](https://colab.research.google.com/)
 
-> **Manuscript:** *Evaluating a Neutrosophic Daily Depression Index From Wearable Data Against Self-Derived and Independent Targets: Leakage-Free Methodological Evaluation Study.*
+> **Manuscript:** *Evaluating the Neutrosophic Depression Index From Wearable Data Against Self-Derived and Independent Targets: Leakage-Free Methodological Evaluation Study.*
 > Harsh Patel, Dr. Ilanthenral Kandasamy. Submitted to *JMIR AI*, 2026.
 >
-> **This repository holds** the analysis code, the configuration files, the archived output of every run behind the manuscript, and the five Multimedia Appendix files. Every number in the manuscript can be found in a file here without running anything (see [Section 3](#3-where-every-manuscript-number-comes-from)). The release cited in the manuscript is **`v1.5-final`** (tagged 18 October 2026).
+> **This repository holds** the analysis code, the configuration files, the archived output of every run behind the manuscript, and the five Multimedia Appendix files. Every number in the manuscript can be found in a file here without running anything (see [Section 3](#3-where-every-manuscript-number-comes-from)). The release cited in the manuscript is **`v1.5-final`**.
 
 ---
 
@@ -17,7 +17,7 @@
 2. [Quick start for reviewers](#2-quick-start-for-reviewers)
 3. [Where every manuscript number comes from](#3-where-every-manuscript-number-comes-from)
 4. [Repository map](#4-repository-map)
-5. [Version history, tags and corrections](#5-version-history-tags-and-corrections)
+5. [Version history, tags and fixes](#5-version-history-tags-and-fixes)
 6. [Data](#6-data)
 7. [Re-running the analyses](#7-re-running-the-analyses)
 8. [Results folders, file by file](#8-results-folders-file-by-file)
@@ -85,7 +85,7 @@ Each path starts from the main page of this repository (for example, open the `r
 | Data preparation, check (3): dating | 1,834 sleep scores matched to their Fitbit sleep log, 0 date mismatches | `results_diagnostics/sleep_score_check_verdict.json`, `sleep_score_check_summary.csv`, `sleep_score_check_rows.csv` | `NDI_sleep_score_check.ipynb` |
 | Data preparation, check (4): self-reports | 1,747 reports → 1,724 participant-days; 2 blank reports dropped; 20 days with several reports | `results_v1.4/data_facts_v1_4.txt`, `wellness_rules_log.csv`, `wellness_daily_W1_W4.csv` | `NDI_v1_4.ipynb` |
 | Learnability diagnostic (Methods) | share of consecutive-day pairs where tomorrow's self-report equals today's: mood 69%, stress 62% | computed from `results_v1.4/wellness_daily_W1_W4.csv` | — |
-| Corrections to the original implementation | V3 vs raw-feature RF: 0.193 (self-derived) and −0.076 (raw-feature) originally; 0.213 and 0.025 after all corrections | `results_v1.4/comparison_v1_v1_2_v1_3_v1_4_formatted.csv` | `NDI_v1_4.ipynb` |
+| Implementation audit | V3 vs raw-feature RF: 0.193 (self-derived) and −0.076 (raw-feature) in the initial pipeline; 0.213 and 0.025 after all five fixes | `results_v1.4/comparison_v1_v1_2_v1_3_v1_4_formatted.csv` | `NDI_v1_4.ipynb` |
 | Figure 1 (first-fold day arithmetic) | days 10, 11–16 and 17; effective gap of 7 days | `results_v1.4/item2_day_arithmetic.txt` | `NDI_v1_4.ipynb` |
 
 PMData participant ages (25–60 years, mean 34) and the collection period (November 2019 to March 2020) come from the PMData publication (Section 6), not from this repository.
@@ -131,9 +131,9 @@ The learnability values for mood and stress (0.161, 0.315) are scored on the day
 | Without p12 (self-derived) | V3 vs raw-feature RF 0.187 (0.104–0.282), q = .002; vs personalised z-score 0.234, q = .002; V-signed vs raw-feature RF q = .055; V3 vs V-signed 0.063, P = .14 | `results_v1.4/supplementary_without_p12_table2.csv` | `NDI_v1_4.ipynb` |
 | Without p12 (mood, stress) | smallest q = .19 | `results_v1.4_task3/task3_table2_mood_without_p12_formatted.csv`, `task3_table2_stress_without_p12_formatted.csv` | `NDI_task3_v1_4.ipynb` |
 | Anomaly correlation (post hoc) | V3 advantage 0.277, q = .001; raw-feature comparisons q = .90; persistence 0.281 vs at most 0.101 | `results_sensitivity_anomaly/anomaly_table2_formatted.csv`, `anomaly_absolute_rho_formatted.csv` | `NDI_sensitivity_anomaly.ipynb` |
-| Trailing target (original alignment) | 0.097 (−0.017 to 0.203); raw-feature comparisons null | `results_v1.2/task1_table2_formatted.csv` (n = 15) | `NDI_v1.2_Corrections.ipynb` |
+| Trailing target (initial pipeline's alignment) | 0.097 (−0.017 to 0.203); raw-feature comparisons null | `results_v1.2/task1_table2_formatted.csv` (n = 15) | `NDI_v1.2_Corrections.ipynb` |
 
-### Component independence and construct validity (original pipeline, tag `v1`)
+### Component independence and construct validity (initial pipeline, tag `v1`)
 
 | Manuscript location | Number(s) | Source file | Notebook |
 |---|---|---|---|
@@ -145,9 +145,9 @@ The learnability values for mood and stress (0.161, 0.315) are scored on the day
 
 | File | Manuscript title | Built from |
 |---|---|---|
-| `NDI_Multimedia_Appendix_1.docx` | Consolidated deviation note: original implementation to final | the five corrections; `results_v1.4/comparison_v1_v1_2_v1_3_v1_4.csv`; the configuration files; the data-integrity files above |
+| `NDI_Multimedia_Appendix_1.docx` | Implementation audit: changes from the initial pipeline (tag v1) to the final pipeline, with their effect on the primary numbers; analyses added in the second stage; data-integrity checks | the five fixes; `results_v1.4/comparison_v1_v1_2_v1_3_v1_4.csv`; the configuration files; the data-integrity files above |
 | `NDI_Multimedia_Appendix_2.docx` | Supplementary results: next-day stress figure; analyses without p12; trailing-target results; anomaly-correlation sensitivity (continuous targets); learnability diagnostic; cumulative leak table | `results_v1.4_task3/`, `results_v1.4/`, `results_v1.2/`, `results_sensitivity_anomaly/`, `results_task4_stage0/` |
-| `NDI_Multimedia_Appendix_3.docx` | Component independence (per-pair statistics and figure) and construct-validity simulation (original pipeline version, repository tag v1) | `results_final_v1_frozen_backup/`; `NDI_Pipeline.ipynb` cells B2 and C2.0–C2.5 |
+| `NDI_Multimedia_Appendix_3.docx` | Component independence (per-pair statistics and figure) and construct-validity simulation (initial pipeline, repository tag v1) | `results_final_v1_frozen_backup/`; `NDI_Pipeline.ipynb` cells B2 and C2.0–C2.5 |
 | `NDI_Multimedia_Appendix_4.docx` | Configuration files, tags, and run order | every `provenance.json` and configuration file |
 | `NDI_Multimedia_Appendix_5.docx` | Completed TRIPOD+AI checklist | the manuscript (page and section for every item) |
 
@@ -166,14 +166,14 @@ NDI_Depression_Risk_Index/
 ├── ndi_pipeline.py                    ← shared pipeline module (neutrosophic channels, folds, helpers)
 │
 ├── ── Multimedia Appendices (submitted with the manuscript) ──
-├── NDI_Multimedia_Appendix_1.docx     ← deviation note: original implementation to final
+├── NDI_Multimedia_Appendix_1.docx     ← implementation audit: initial pipeline to final pipeline
 ├── NDI_Multimedia_Appendix_2.docx     ← supplementary results
 ├── NDI_Multimedia_Appendix_3.docx     ← component independence and construct-validity simulation (tag v1)
 ├── NDI_Multimedia_Appendix_4.docx     ← configuration files, tags and run order
 ├── NDI_Multimedia_Appendix_5.docx     ← completed TRIPOD+AI checklist
 │
 ├── ── Notebooks, in the order they were run ──
-├── NDI_Pipeline.ipynb                 ← v1: original analysis (history; superseded)
+├── NDI_Pipeline.ipynb                 ← v1: initial pipeline (history; superseded)
 ├── NDI_v1.2_Corrections.ipynb         ← v1.2: fold-local statistics, purge, bounded-null statistics, leak quantification (trailing target)
 ├── NDI_v1_3_forward.ipynb             ← v1.3: target re-aligned to the following 7 days; target-swap shift
 ├── NDI_duplicate_days_check.ipynb     ← diagnostic: finds the 18 duplicated rows (read-only)
@@ -190,7 +190,7 @@ NDI_Depression_Risk_Index/
 ├── config_task3_v1_4.json             ← tag v1.4-task3
 │
 └── ── Archived outputs (exactly as written by the runs) ──
-    ├── results_final_v1_frozen_backup/   ← v1 outputs, frozen before any correction
+    ├── results_final_v1_frozen_backup/   ← v1 outputs, frozen before any fix
     ├── results_v1.2/                     ← trailing target, n = 15 (holds config_v1_2_correction.json)
     ├── results_v1.3/                     ← forward target, before de-duplication
     ├── results_v1.4/                     ← final self-derived and raw-feature results, leaks
@@ -201,8 +201,8 @@ NDI_Depression_Risk_Index/
 ```
 
 **About the names:**
-- "Task 1", "Task 2" and "Task 3" in file names are the revision's work packages: corrected accuracy with bounded nulls (Task 1), leak quantification (Task 2), and the self-report targets with persistence references (Task 3).
-- "Figure 4" and "Table 4" in some file names are the revision's working numbers. In the manuscript the leak waterfall is **Figure 3** and the leak table is **Table 3**.
+- "Task 1", "Task 2" and "Task 3" in file names are the second stage's work packages: corrected accuracy with bounded nulls (Task 1), leak quantification (Task 2), and the self-report targets with persistence references (Task 3).
+- "Figure 4" and "Table 4" in some file names are the second stage's working numbers. In the manuscript the leak waterfall is **Figure 3** and the leak table is **Table 3**.
 - The folder `results_task4_stage0/` holds the learnability diagnostic and keeps the name the notebook writes to; renaming it would break the notebook's output path and its `provenance.json` record.
 - `NDI_stage0_learnability.ipynb` has the same code as `NDI_task4_stage0.ipynb` in tag `v1.4-task4`. The tagged copy was committed before the run and has no outputs; the copy here is the executed notebook, saved with its outputs.
 - Each run's results folder also holds a copy of the configuration file the run used.
@@ -211,21 +211,23 @@ NDI_Depression_Risk_Index/
 
 ---
 
-## 5. Version history, tags and corrections
+## 5. Version history, tags and fixes
 
 | Version | Tag (commit) | What changed | Results |
 |---|---|---|---|
-| v1 | `v1` (`fca1d9c`) | Original analysis | `results_final_v1_frozen_backup/` |
+| v1 | `v1` (`fca1d9c`) | Initial pipeline (first stage) | `results_final_v1_frozen_backup/` |
 | v1.2 | *(not tagged)* | Fold-local and causal statistics replace whole-series statistics; purge added; bounded-null statistics; leak quantification. Trailing target kept. | `results_v1.2/` |
 | v1.3 | `v1.3-forward` (`54b5c73`) | Target window moved to the **following** 7 days; target-swap shift | `results_v1.3/` |
 | v1.4 | `v1.4` (`4dabbfe`) | One row per calendar date (18 duplicated rows removed); p12 included (n = 16); self-report rules W1–W4; analysis without p12 | `results_v1.4/` |
 | v1.4 with self-report targets | `v1.4-task3` (`1a3c297`) | Next-day mood and stress; persistence references; Figure 2; Table 3 | `results_v1.4_task3/` |
 | Post hoc analyses | run from the `v1.4-task3` commit, not tagged separately | Learnability diagnostic; anomaly-correlation sensitivity | `results_task4_stage0/`, `results_sensitivity_anomaly/` |
-| Final package | `v1.5-final` (tagged 18 October 2026) | Multimedia Appendices, this README and the repository state cited in the manuscript; no new analysis | all of the above |
+| Final package | `v1.5-final` | Multimedia Appendices, this README and the repository state cited in the manuscript; no new analysis | all of the above |
 
 Commit hashes are the first seven characters of those recorded in each run's `provenance.json` (for `v1`, from the repository's tag list). Run times and the full run order are in Multimedia Appendix 4.
 
-**The five corrections to the original implementation** (manuscript: *Corrections to the original implementation*; details in Multimedia Appendix 1):
+The positive-control simulation (specified, started, not completed; no results reported) is preserved under tag v1.4-task4.
+
+**The five fixes from the implementation audit** (manuscript: Methods, *Implementation audit*; details in Multimedia Appendix 1):
 1. **Target alignment:** the endpoint was specified as forward-looking, but the code averaged the preceding 7 days. Fixed in v1.3; the trailing results are kept in `results_v1.2/`.
 2. **Whole-series statistics:** the T channel, the imputation medians and the raw-feature target's normalisation used the full series. Fixed in v1.2 (fold-local statistics for features, causal statistics for targets).
 3. **Purge:** the 6-day embargo left a one-day overlap between the last training row's target window and the test day. Fixed in v1.2.
@@ -235,8 +237,8 @@ Commit hashes are the first seven characters of those recorded in each run's `pr
 `results_v1.4/comparison_v1_v1_2_v1_3_v1_4_formatted.csv` shows how each step moved every primary number.
 
 **Status labels used in the manuscript:**
-- **Original analysis:** the primary endpoint, arms, evaluation protocol and raw-feature control (tag `v1`).
-- **Revision analyses:** specified after the original results were known, each fixed in a configuration file before its own run. From v1.3 onward each tagged run (v1.3-forward, v1.4, v1.4-task3) had its configuration committed and tagged before the run; v1.2 was not tagged, and the two post hoc analyses ran from the v1.4-task3 commit without tags of their own.
+- **First-stage analysis:** the primary endpoint, arms, evaluation protocol and raw-feature control (tag `v1`).
+- **Second-stage analyses:** specified after the first-stage results were known, each fixed in a configuration file before its own run. From v1.3 onward each tagged run (v1.3-forward, v1.4, v1.4-task3) had its configuration committed and tagged before the run; v1.2 was not tagged, and the two post hoc analyses ran from the v1.4-task3 commit without tags of their own.
 - **Post hoc:** quantities defined after their own results were seen: the learnability diagnostic and the anomaly correlation.
 - **Exploratory:** quantities defined before their results but outside the primary family: the target-swap shift, and V3 vs persistence.
 
@@ -300,7 +302,7 @@ The **G-0** cell clones this repository and checks out the notebook's tag, so th
 **Three notebooks are history; read them, don't Run all:**
 - **`NDI_v1.2_Corrections.ipynb`** was not tagged and contains the whole v1 pipeline before its v1.2 cells. Re-running it would overwrite `results_v1.2/` and can differ in the last decimals under newer Colab package versions. Its saved outputs (run of 7 October 2026) include the v1.2 hand-in check: 22 of 22 result files present, and the v1 regeneration check passed.
 - **`NDI_v1_3_forward.ipynb`** is superseded by v1.4. Its saved outputs and `results_v1.3/` document the forward-target step.
-- **`NDI_Pipeline.ipynb`** is the original v1 analysis, kept for transparency and as the source of Multimedia Appendix 3.
+- **`NDI_Pipeline.ipynb`** is the initial (v1) pipeline, kept for transparency and as the source of Multimedia Appendix 3.
 
 **Tip:** to re-run without touching your copy of the archive, run on a separate Drive copy. The notebooks only read the folders of earlier stages, and their hand-in checks confirm that no earlier file was modified.
 
@@ -327,7 +329,7 @@ Each run folder (`results_v1.2/` to `results_v1.4_task3/`, `results_task4_stage0
 | `exploratory_target_swap_shift*.csv`, `exploratory_notes.txt` | Target-swap shift |
 | `task2_one_at_a_time*.csv`, `task2_table4_inflation_column*.csv` | Standalone leak inflation (**Table 3** inputs) |
 | `task2_waterfall_cumulative*.csv`, `figure4_leak_waterfall.pdf` / `.png`, `figure4_bar_labels.csv` | Cumulative leak removal starting from all five leaks (Multimedia Appendix 2) |
-| `task2_v1_2_v1_3_v1_4.csv`, `comparison_v1_v1_2_v1_3_v1_4*.csv`, `v1_vs_corrected.csv` | Effect of each correction |
+| `task2_v1_2_v1_3_v1_4.csv`, `comparison_v1_v1_2_v1_3_v1_4*.csv`, `v1_vs_corrected.csv` | Effect of each fix |
 | `supplementary_without_p12_*.csv`, `supplementary_without_p12_notes.txt` | Analysis without p12 |
 | `fold_log_self_target.csv`, `fold_log_raw_target.csv` | Every fold: training and test days, embargo, purge |
 | `forward_target_dropped_test_days.csv`, `item2_day_arithmetic.txt` | Day arithmetic of the forward target window (Figure 1) |
@@ -390,11 +392,11 @@ Each run folder (`results_v1.2/` to `results_v1.4_task3/`, `results_task4_stage0
 | File(s) | Contents |
 |---|---|
 | `config_v1_2_correction.json`, `provenance.json` | Configuration (fixed before the run, not tagged); provenance (no commit recorded) |
-| `table1_corrected_self_target_per_participant.csv`, `raw_target_corrected_per_participant.csv`, `v1_vs_corrected.csv` | Per-participant ρ after corrections 2 and 3; v1 vs corrected |
+| `table1_corrected_self_target_per_participant.csv`, `raw_target_corrected_per_participant.csv`, `v1_vs_corrected.csv` | Per-participant ρ after fixes 2 and 3; v1 vs corrected |
 | `task1_absolute_rho*.csv`, `task1_table2*.csv`, `task1_notes.txt` | Trailing-target results (Multimedia Appendix 2) |
 | `task2_one_at_a_time.csv`, `task2_table4_inflation_column.csv`, `task2_waterfall_cumulative.csv`, `figure4_leak_waterfall.*` | Leaks under the trailing target, including L2 +0.299 (Table 3) |
 | `sensitivity_per_fold_target_*.csv` | Self-derived target rebuilt per fold (sensitivity row) |
-| `item2_day_arithmetic.txt`, `fold_log_*.csv` | First-fold day arithmetic that found corrections 1 and 3; fold logs |
+| `item2_day_arithmetic.txt`, `fold_log_*.csv` | First-fold day arithmetic that found fixes 1 and 3; fold logs |
 | `independent_check_*`, `handin_check.txt` | Independent fold loop; hand-in check |
 
 ### `results_v1.3/` (forward target, before de-duplication)
@@ -403,7 +405,7 @@ The same structure as `results_v1.4/` without the self-report and p12 files, plu
 
 ### `results_final_v1_frozen_backup/` (v1, frozen)
 
-The original v1 outputs with their `manifest.json`, copied before any correction and never modified. They include `config_frozen.json`, `primary_pmdata_rho.csv`, `item7_independence_real_data.csv` (component independence), and `arm2_recovery_summary.csv`, `arm2_independence_eff_rank.csv` and `arm2_independence_pairs.csv` (construct-validity simulation). `manifest.json` lists every file with the notebook cell that wrote it.
+The initial (v1) outputs with their `manifest.json`, copied before any fix and never modified. They include `config_frozen.json`, `primary_pmdata_rho.csv`, `item7_independence_real_data.csv` (component independence), and `arm2_recovery_summary.csv`, `arm2_independence_eff_rank.csv` and `arm2_independence_pairs.csv` (construct-validity simulation). `manifest.json` lists every file with the notebook cell that wrote it.
 
 ---
 
@@ -452,9 +454,9 @@ The original v1 outputs with their `manifest.json`, copied before any correction
 
 ## 12. Citation and licence
 
-**This work:** Patel H, Kandasamy I. Evaluating a neutrosophic daily depression index from wearable data against self-derived and independent targets: leakage-free methodological evaluation study. Submitted to *JMIR AI*, 2026. (DOI to be added on publication.)
+**This work:** Patel H, Kandasamy I. Evaluating the Neutrosophic Depression Index from wearable data against self-derived and independent targets: leakage-free methodological evaluation study. Submitted to *JMIR AI*, 2026. (DOI to be added on publication.)
 
-**This repository:** Patel H, Kandasamy I. NDI_Depression_Risk_Index: analysis code, configuration files, and results archive, release v1.5-final. GitHub. 2026. URL: https://github.com/hpatel09112004/NDI_Depression_Risk_Index [accessed 2026-10-18]
+**This repository:** Patel H, Kandasamy I. NDI_Depression_Risk_Index: analysis code, configuration files, and results archive, release v1.5-final. GitHub. 2026. URL: https://github.com/hpatel09112004/NDI_Depression_Risk_Index [accessed 2026-10-19]
 
 **Datasets:** please cite PMData and DEPRESJON as in Section 6.
 
